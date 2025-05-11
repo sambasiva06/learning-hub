@@ -1,0 +1,89 @@
+/* hero.css */
+.hero {
+    background-color: #f8f9fa; /* Example background color */
+    padding: 5rem 0; /* Adjust padding as needed */
+    text-align: center; /* Center text content */
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    max-width: 1200px; /* Optional: Set a max-width */
+    margin: 0 auto;
+    padding: 2rem; /* Add padding around content */
+  }
+  
+  .hero-text {
+    flex: 1; /* Allow text to take up available space */
+    text-align: left; /* Align text to the left */
+    padding-right: 2rem; /* Space between text and image */
+  }
+  
+  .hero h1 {
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem; /* Adjust as needed */
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem; /* Adjust as needed */
+    margin-bottom: 2rem;
+    color: #555; /* Example lighter color */
+  }
+  
+  .cta-button {
+    background-color: #1b598e; /* Example blue color */
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color:#16456f ; /* Darker blue color on hover */
+  }
+  
+  .hero-image {
+    flex: 1; /* Allow image to take up available space */
+    text-align: center; /* Center the image */
+  }
+
+  @media (max-width: 768px) {
+    .hero-image {
+      margin-bottom: 2rem; /* Add space below image on smaller screens */
+    }
+  }
+  
+  /* Responsive Images */
+  .hero-image img {
+    width: 100%;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    height: auto;
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+  }
+  
+  /* Responsive Styles (adjust as needed) */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column; /* Stack text and image vertically */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .hero-text {
+      text-align: center; /* Center text on smaller screens */
+      padding-right: 0; /* Remove right padding */
+      margin-bottom: 2rem; /* Add space below text */
+    }
+  }
